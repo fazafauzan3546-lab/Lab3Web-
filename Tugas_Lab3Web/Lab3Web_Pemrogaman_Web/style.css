@@ -1,0 +1,128 @@
+/* CSS dibuat agar mendekati screenshot referensi */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 4px 8px 0;
+    border-top: 2px solid #dedede;
+    background-color: #ffffff;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #d4e1e9;
+}
+
+.header {
+    height: 109px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 38px;
+    background: #ffffff;
+}
+
+.header h1 {
+    margin: 0;
+    color: #10199a;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.header h1 i {
+    color: #6d6a6b;
+}
+
+.nav {
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding-left: 13px;
+    background-color: #20a759;
+    border-bottom: 1px solid #099249;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.2;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav a:hover {
+    background-color: #0b6b3a;
+}
+
+.intro {
+    min-height: 291px;
+    padding: 31px 17px 22px;
+    background-color: #418fb1;
+    border: 1px solid #099249;
+}
+
+.intro h2 {
+    margin: 17px 6px 35px;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.intro p {
+    margin: 0 0 27px;
+    color: #d2e0e9;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 15px 22px;
+    background-color: #e42a42;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #c51e35;
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: 100px;
+        padding-top: 35px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .nav a {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+
+    .intro {
+        padding: 24px 12px 18px;
+    }
+
+    .intro p {
+        font-size: 15px;
+    }
+}
